@@ -13,7 +13,7 @@
   "scripts": {
     "start": "nodemon app.js"
   },
-  "author": "Kate Southwart aka Kaitlyn Myer",
+  "author": "Kate Myer",
   "license": "ISC",
   "description": ""
 }
