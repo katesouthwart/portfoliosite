@@ -1,0 +1,180 @@
+<nav class="navbar navbar-expand-md navbar-dark fixed-top navbar-custom py-0">
+  <div class="container-fluid col-10">
+    <a class="navbar-brand" href="/">KM.</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarCollapse">
+
+      <ul class="navbar-nav ms-auto text-end mb-2 mb-md-0 pt-2">
+        <li class="nav-item">
+          <a class="nav-link px-3 mx-2 navbar-custom" aria-current="page" href="/#about">About</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link px-3 mx-2 navbar-custom" href="/#projects">Projects</a>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+<div class="container my-5">
+  <div class="d-flex flex-wrap">
+    <div class="col-11 col-lg-9 mx-auto">
+
+      <div class="col-12 py-5">
+        <section id="about">
+          <h1 class="big-heading">I'm Kate Myer</h1>
+          <p class="mt-5 ps-2 text-break text-justify lh-lg">Hi, I'm Kaitlyn Myer, and I'm a junior web developer. I've recently completed a fullstack development bootcamp, taken on a <a href="#render" class="tag px-2 py-1 d-inline nav-link">passion project</a> of my own, and am seeking my first developer role.</p>
+          <p class="ps-2 text-break text-justify lh-lg">I'm most experienced with Express.js, NoSQL (Mongoose), EJS, Bootstrap, CSS, and HTML, and currently working on a PHP and Wordpress bootcamp. As I explore which technologies inspire me most, next steps for me include expanding my knowledge of SQL and learning .NET and C#.</p>
+          <p class="ps-2 text-break text-justify lh-lg">Check out some of my recently completed <a href="#projects" class="tag px-2 py-1 d-inline nav-link">projects</a>.</p>
+
+          <div class="col-12 pt-3 d-flex flex-wrap ">
+            <section id="contact" class="">
+              <a href="mailto:kate.southwart@gmail.com" class="nav-link px-3 py-1 d-inline mx-e"><i class="fa-solid fa-xl fa-envelope"></i></a>
+              <a href="https://www.linkedin.com/in/kaitlyn-myer-31288b218/" class="nav-link px-3 py-1 d-inline mx-1"><i class="fa-brands fa-xl fa-linkedin"></i></a>
+              <a href="https://github.com/katesouthwart" class="nav-link px-3 py-1 d-inline mx-1"><i class="fa-brands fa-xl fa-github"></i></a>
+            </section>
+          </div>
+        </section>
+      </div>
+
+      <div class="col-12 py-5">
+        <section id="projects">
+          <h1 class="big-heading pb-0">My projects</h1>
+
+          <div class="pt-5" id="render">
+            <h2 class="col-12 pt-2">Render</h2>
+            <p class="col-12 mt-3 text-break text-justify lh-lg">Render is a passion project of mine which I created to expand on the skills learned during my development bootcamp.
+              Render is a cooking focused social media platform which includes features for posting recipes, following other users, private profiles, and the "Discover" feature.
+              Discover is a "Tinder"-like mechanic for finding users to follow and be inspired by in a fun way, while increasing the visibility of users who would normally be obscured by powerful SEO.
+            </p>
+
+            <div class="col-12 mx-auto d-flex flex-wrap justify-content-between">
+              <div class=" m-2 m-lg-0 col-12 col-lg-4 text-center">
+                <a href="https://www.rendersocial.io/" target="_blank"><img src="/images/render home.png" class="project-img" alt="Render Homepage"></a>
+
+              </div>
+              <div class=" m-2 m-lg-0 col-12 col-lg-4 text-center">
+                <a href="https://www.rendersocial.io/posts/timeline/all" target="_blank"><img src="/images/render timeline.png" class="project-img" alt="Render"></a>
+
+              </div>
+              <div class=" m-2 m-lg-0 col-12 col-lg-4 text-center">
+                <a href="https://www.rendersocial.io/discover" target="_blank"><img src="/images/render discover.png" class="project-img" alt="Render"></a>
+
+              </div>
+            </div>
+
+            <div class="col-12 d-flex flex-wrap ms-3 ms-lg-0 mt-3 mb-5">
+
+              <div class="col-12 d-flex flex-wrap my-2">
+                <h5 class="ms-2">Tech Stack</h5>
+                <div class="col-12 d-flex flex-wrap">
+                  <% renderTechStack.forEach(function(tech, index){ %>
+                    <p class="tag px-3 py-1 mx-2 skill-text"><%= tech %></p>
+                  <% }); %>
+                </div>
+              </div>
+
+              <div class="col-12 d-flex flex-wrap mt-2">
+                <h5 class="ms-2">Skills</h5>
+                <div class="col-12 d-flex flex-wrap">
+                  <% renderSkills.forEach(function(skill, index){ %>
+                    <p class="tag px-3 py-1 mx-2 skill-text"><%= skill %></p>
+                  <% }); %>
+                </div>
+              </div>
+
+              <p class="d-flex ps-2">
+                <button class="btn btn-outline-dark mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#guestDetails" aria-expanded="false" aria-controls="collapseExample">
+                  Sign in as a guest
+                </button>
+              </p>
+              <div class="collapse" id="guestDetails">
+                <div class="ps-2">
+                  <p class="text-break text-justify skill-text">Use the following details to sign in on the guest account, or feel free to create an account of your own to explore the website.</p>
+                  <p class="skill-text"><span class="fw-bold me-2">Email:</span>rendersocialguest@gmail.com</p>
+                  <p class="skill-text"><span class="fw-bold me-2 skill-text">Password:</span>1%2TgesK&hX60$I!</p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="my-3 d-flex flex-wrap">
+            <h2 class="col-12 mt-3">Guided Projects</h2>
+            <p class="col-12 mt-3 text-break text-justify lh-lg">A few projects completed throughout the duration of my full stack web development bootcamp.</p>
+            <div class="col-12 mx-auto d-flex flex-wrap justify-content-between">
+
+              <div class=" m-2 m-lg-0 col-12 col-lg-4 text-center">
+                <a href="https://blogprojectmongoose-70a7c4816ba3.herokuapp.com/" target="_blank"><img src="/images/blog.png" class="project-img" alt="Blog project"></a>
+                <h5 class="my-3">Blog</h5>
+                <p class="text-break text-justify px-2  skill-text">A single-user blog website, created with Mongoose, Express, and EJS. Features dynamic pages for each blog post.</p>
+                <p class="col-12 d-flex justify-content-center">
+                  <button class="col-6 btn btn-outline-dark" type="button" data-bs-toggle="collapse" data-bs-target="#blogStack" aria-expanded="false" aria-controls="collapseExample">
+                    Tech Stack
+                  </button>
+                </p>
+                <div class="collapse" id="blogStack">
+                  <div class="">
+                    <div class="col-10 d-flex flex-wrap justify-content-center mx-auto">
+                      <% blogTechStack.forEach(function(tech, index){ %>
+                        <p class="tag px-3 py-1 mx-2 skill-text"><%= tech %></p>
+                      <% }); %>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class=" m-2 m-lg-0 col-12 col-lg-4 text-center">
+                <a href="https://simongamejquery-2ac8b8e5ecb2.herokuapp.com/" target="_blank"><img src="/images/simon game.png" class="project-img" alt="Simon game project"></a>
+                <h5 class="my-3">Simon Game</h5>
+                <p class="text-break text-justify px-2  skill-text">Modelled after the classic game "Simon". Each round adds a new colour to the array. Enter the full array to advance.</p>
+                <p class="col-12 d-flex justify-content-center">
+                  <button class="col-6 btn btn-outline-dark" type="button" data-bs-toggle="collapse" data-bs-target="#simonStack" aria-expanded="false" aria-controls="collapseExample">
+                    Tech Stack
+                  </button>
+                </p>
+                <div class="collapse" id="simonStack">
+                  <div class="">
+                    <div class="col-10 d-flex flex-wrap justify-content-center mx-auto">
+                      <% simonTechStack.forEach(function(tech, index){ %>
+                        <p class="tag px-3 py-1 mx-2 skill-text"><%= tech %></p>
+                      <% }); %>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class=" m-2 m-lg-0 col-12 col-lg-4 text-center">
+                <a href="https://diceejavascriptproject-73e656f7bb30.herokuapp.com/" target="_blank"><img src="/images/dice game.png" class="project-img" alt="Dicee game project"></a>
+                <h5 class="my-3">Dice Roll</h5>
+                <p class="text-break text-justify px-2 skill-text">Random values are generated using Javascript and compared to decide a winner. Refresh to roll again.</p>
+                <p class="col-12 d-flex justify-content-center">
+                  <button class="col-6 btn btn-outline-dark" type="button" data-bs-toggle="collapse" data-bs-target="#diceStack" aria-expanded="false" aria-controls="collapseExample">
+                    Tech Stack
+                  </button>
+                </p>
+                <div class="collapse" id="diceStack">
+                  <div class="">
+                    <div class="col-10 d-flex flex-wrap justify-content-center mx-auto">
+                      <% diceTechStack.forEach(function(tech, index){ %>
+                        <p class="tag px-3 py-1 mx-2 skill-text"><%= tech %></p>
+                      <% }); %>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-ejs-layouts": "^2.5.1",
+    "nodemon": "^3.0.1"
+  },
+  "name": "katesouthwartsite",
+  "version": "1.0.0",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "Kate Southwart aka Kaitlyn Myer",
+  "license": "ISC",
+  "description": ""
+}
