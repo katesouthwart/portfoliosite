@@ -24,7 +24,7 @@ app.get("/", (req, res) => {
   const diceTechStack = ["Javascript", "JQuery", "CSS", "HTML"];
 
   res.render("home", {
-    title: "Kate Southwart",
+    title: "Kate Myer",
     renderSkills,
     renderTechStack,
     blogTechStack,
